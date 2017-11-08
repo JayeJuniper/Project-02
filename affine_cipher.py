@@ -39,8 +39,9 @@ class Affine(Cipher):
         
     #decryption function D(x) = a^(-1)(x-b)mod26
     def decrypt(self):
-        text = input("What would you like to decrypt?\nBe sure to separate \
-                     numbers with a space!\n>> ").upper()
+        text = input("""What would you like to decrypt?\nBe sure to separate \
+numbers with a space!\n>> """
+                    ).upper()
         proxy_text = [item for item in text.split(' ')]
         decrypted_text = []
         
